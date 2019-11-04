@@ -324,14 +324,14 @@ footer {
 
     .logo-container {
         width: 100%;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #a6a6a6;
         text-align: center;
     }
 
     .logo {
         margin-bottom: 0;
         padding-bottom: 20px;
-        width: 40%;
+        width: 38%;
     }
 
     nav ul {
@@ -339,7 +339,7 @@ footer {
     }
 
     nav ul li {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #a6a6a6;
         width: 100%;
         text-align: center;
         padding: 20px 0;
@@ -347,5 +347,18 @@ footer {
 
     li a {
         font-size: 1.4rem;
+    }
+
+    #content {
+        padding: 20px 0;
+    }
+
+    .content-row {
+        flex-wrap: wrap;
+    }
+
+    .content-column {
+        width: 100%;
+        margin: 20px 0;
     }
 }
