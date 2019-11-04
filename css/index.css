@@ -1,3 +1,270 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    /* border: 1px solid gray; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+	font-family: "Montserrat", "Avenir";
+}
+
+#top-header {
+	display: flex;
+	justify-content: space-between;
+	width: 900px;
+	top: 0;
+	width: 100;
+}
+
+#top-header a {
+	width: 28%;
+}
+
+.logo {
+	width: 80%;
+	float: right;
+	margin-right: 10px;
+}
+
+nav {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul li {
+	width: 16%;
+	padding-top: 10px;
+    padding-bottom: 13px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #a6a6a6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+    width: 16%;
+    text-align: left;
+}
+
+nav a:hover {
+	color: steelblue;
+	font-weight: bold;
+}
+
+#title {
+	display: flex;
+	height: 400px;
+	text-align: center;
+	margin: 60px 0;
+	justify-content: space-between;
+	
+}
+
+#title-cta {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+#title-cta img {
+	width: 50%;
+	
+}
+
+#title-header {
+	font-size: 84px;
+	text-align: center;
+}
+
+#title img {
+
+}
+
+.button {
+	width: 150px;
+	background: white;
+	padding: 10px 20px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: steelblue;
+	color: white;
+}
+
+.content-row {
+	display: flex;
+}
+
+.content-column {
+	margin: 40px 0;
+	padding: 5px;
+}
+
+#content img {
+	width: 900px;
+	
+}
+
+#content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact {
+	margin: 40px 0;
+}
+
+address p:nth-child(3) {
+	margin: 20px 0;
+}
+
+footer {
+	margin: 50px 0;
+	text-align: center;
+}
+
+/* ###### Code for the services page starts here. ######*/
+
+.services-header-content {
+	margin: 20px 0;
+}
+
+.services-header-img {
+	width: 100%;
+}
+
+.services-header-content h1 {
+	font-size: 28px;
+}
+
+.services-main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	padding: 40px 0;
+	height: 750px;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+}
+
+.card {
+	width: 48%;
+	padding: 20px;
+	background: white;
+	border: 1px solid black;
+	background: 	#f2f2f2;
+}
+
+.card button {
+	margin-top: 15px;
+	width: 150px;
+	padding: 10px 30px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 11px;
+	background: white;
+}
+
+#service-info-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0;
+	align-items: center;
+}
+
+.service-info {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+}
+
+.services-info-img {
+	width: 48%;
+}
+
+.services-info-list li {
+	list-style-type: disc; 
+	margin-bottom: 20px;
+}
+
+.services-info-list {
+	padding-left: 20px;
+	margin-top: 20px;
+}
 
