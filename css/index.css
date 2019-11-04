@@ -207,8 +207,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
-	padding: 40px 0;
-	height: 750px;
+	padding: 20px 0;
 	border-top: 1px solid black;
 	border-bottom: 2px solid black;
 }
@@ -218,7 +217,9 @@ footer {
 	padding: 20px;
 	background: white;
 	border: 1px solid black;
-	background: 	#f2f2f2;
+    background: 	#f2f2f2;
+    
+    margin: 20px 0;
 }
 
 .card button {
@@ -242,7 +243,7 @@ footer {
 .service-info {
 	width: 48%;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 .services-info-img {
@@ -256,7 +257,9 @@ footer {
 
 .services-info-list {
 	padding-left: 20px;
-	margin-top: 20px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 @media (max-width: 800px) {
@@ -315,6 +318,26 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+	.services-header-content {
+		padding-left: 20px;
+		padding-right: 20px;
+    }
+    
+    .services-header-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+	#service-info-section {
+		padding-left: 20px;
+		padding-right: 20px;
+    }
+    
+    .services-main {
+        width: 96%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 500px) {
@@ -360,5 +383,26 @@ footer {
     .content-column {
         width: 100%;
         margin: 20px 0;
+    }
+
+    .services-header-img  {
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #service-info-section {
+        flex-wrap: wrap-reverse;
+    }
+
+    .service-info {
+        width: 100%;
+    }
+
+    .services-info-img {
+        width: 100%;
+        padding-bottom: 20px;
     }
 }
